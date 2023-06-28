@@ -32,7 +32,6 @@ class QuestionController extends MainController
      */
     public function show($id)
     {
-
         // $question = Question::find($id)->with('answers')->get()->toArray();
         $question = Question::findOrFail($id);
         $answers = $question->answers->toArray();

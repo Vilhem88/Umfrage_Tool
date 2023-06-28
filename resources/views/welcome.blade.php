@@ -14,6 +14,10 @@
                 @endauth
             </div>
         @endif
+
+        <div>
+            <a href="{{ route('home.results') }}">See results</a>
+        </div>
         <x-sessions/>
         <table class="table">
             <thead>

@@ -18,6 +18,7 @@ use App\Http\Controllers\QuestionController;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
+Route::get('/results', [HomeController::class, 'results'])->name('home.results');
 
 
 Route::middleware('auth')->group(function () {
